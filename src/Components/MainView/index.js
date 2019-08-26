@@ -2,9 +2,9 @@ import React from 'react';
 
 const MainView = (props) => {
   return (
-    <React.Fragment>
+    <div className="mainview">
       {props.children}
-    </React.Fragment>
+    </div>
   )
 }
 

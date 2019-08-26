@@ -3,7 +3,7 @@ import React from 'react';
 const NavContainer = () => {
   return (
     <div>
-      nav here
+      <i class="fas fa-bars"></i>
     </div>
   )
 }

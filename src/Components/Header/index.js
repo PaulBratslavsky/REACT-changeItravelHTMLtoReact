@@ -4,8 +4,8 @@ import NavContainer from './../NavContainer';
 
 const Header = () => {
   return (
-    <header>
-      <div className="container">
+    <header className="main-header center">
+      <div className="container flex-row-between">
         <LogoContainer />
         <NavContainer />
       </div>

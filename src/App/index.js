@@ -11,19 +11,29 @@ import MainView from '../Components/MainView';
   import Testimonials from './../Components/Testimonial';
 
 import Footer from '../Components/Footer';
+import MobileMenu from '../Components/MobileMenu';
 
 class App extends Component {
 
   state = {
     showMobileNav: true
   }
-  
+
+  onClickToggleMenu = () => {
+    console.log('toggle button clicked');
+  }
+
+  onClickCloseMenu = () => {
+    console.log('Menu closed clicked')
+  }
+
   render() {
     return (
       <div className="app">
         <Header />
         <MainView>
           <div className="container">
+          <MobileMenu />
             <Switch>
               <Route exact path='/' component={Hero} />
               <Route path='/aboutus' component={AboutUs} />

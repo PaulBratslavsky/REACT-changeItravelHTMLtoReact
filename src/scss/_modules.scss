@@ -3,3 +3,18 @@
   margin: 0 auto;
   background: yellow;
 }
+
+// POSITION WITH FLEX
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

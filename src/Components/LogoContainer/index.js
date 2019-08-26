@@ -3,7 +3,7 @@ import React from 'react';
 const LogoContainer = () => {
   return (
     <div>
-      logo here
+      iTravel
     </div>
   )
 }
