@@ -1,0 +1,12 @@
+@import './../../scss/variables';
+
+#logo-container {
+  position: relative;
+  top: 22px;
+  left: 50vw;
+  margin-left: -106px;
+  height: 100px;
+  width: 180px;
+  background: $mainColor;
+  color: $textColor;
+}

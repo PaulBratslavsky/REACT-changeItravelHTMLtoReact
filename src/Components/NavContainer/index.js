@@ -1,11 +1,11 @@
 import React from 'react';
+import NavButton from './../NavButton';
 
-const NavContainer = () => {
+const NavContainer = (props) => {
+  const { onClickToggleMenu } = props;
   return (
-    <div>
-      <i class="fas fa-bars"></i>
-    </div>
-  )
+    <NavButton onClickToggleMenu={onClickToggleMenu} />
+  );
 }
 
 export default NavContainer;

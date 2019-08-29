@@ -1,15 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const MobileMenu = () => {
+const MobileMenu = (props) => {
+  const { showMobileNav, onClickCloseMenu } = props; 
+
+  let visibility = 'hide';
+
+  if (showMobileNav) {
+    visibility = "show";
+  }
+ 
   return (
-    <nav className="mobile-nav center">
+    <nav className={`mobile-nav center ${visibility}`}>
       <div className="container">
-        <ul className="mobile-nav__item center">
-          <li className="mobile-nav__items">1</li>
-          <li className="mobile-nav__items">2</li>
-          <li className="mobile-nav__items">3</li>
-          <li className="mobile-nav__items">4</li>
-        </ul>
+        <div className="mobile-nav__item center">
+          <Link onClick={onClickCloseMenu} to='/'>Home</Link>
+          <Link onClick={onClickCloseMenu} to='/about'>About</Link>
+          <Link onClick={onClickCloseMenu} to='/features'>Features</Link>
+          <Link onClick={onClickCloseMenu} to='/testimonials'>Testimonials</Link>
+          <Link onClick={onClickCloseMenu} to='/contact'>Contatct</Link>
+        </div>
       </div>
     </nav>
   )

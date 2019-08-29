@@ -6,9 +6,10 @@ import Header from '../Components/Header';
 
 import MainView from '../Components/MainView';
   import Hero from './../Components/Hero';
-  import AboutUs from './../Components/AboutUs';
+  import About from '../Components/About';
   import Features from './../Components/Features';
   import Testimonials from './../Components/Testimonial';
+  import Contact from './../Components/Contact';
 
 import Footer from '../Components/Footer';
 import MobileMenu from '../Components/MobileMenu';
@@ -16,29 +17,34 @@ import MobileMenu from '../Components/MobileMenu';
 class App extends Component {
 
   state = {
-    showMobileNav: true
+    showMobileNav: false
   }
 
-  onClickToggleMenu = () => {
-    console.log('toggle button clicked');
-  }
+  onClickToggleMenu = () => this.setState( prevState => ({ showMobileNav: !prevState.showMobileNav }));
 
-  onClickCloseMenu = () => {
-    console.log('Menu closed clicked')
-  }
+
+  onClickCloseMenu = () => this.setState({showMobileNav: false});
+  
 
   render() {
+
+    const { showMobileNav } = this.state;
+
     return (
       <div className="app">
-        <Header />
+        <Header onClickToggleMenu={this.onClickToggleMenu} />
         <MainView>
           <div className="container">
-          <MobileMenu />
+            <MobileMenu
+              showMobileNav={showMobileNav} 
+              onClickCloseMenu={this.onClickCloseMenu}
+            />
             <Switch>
               <Route exact path='/' component={Hero} />
-              <Route path='/aboutus' component={AboutUs} />
+              <Route path='/about' component={About} />
               <Route path='/features' component={Features} />
               <Route path='/testimonials' component={Testimonials} />
+              <Route path='/contact' component={Contact} />
             </Switch>
           </div>
         </MainView>

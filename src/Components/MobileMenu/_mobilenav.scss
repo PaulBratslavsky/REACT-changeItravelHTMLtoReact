@@ -1,8 +1,42 @@
+@import "./../../scss/variables";
+
 .mobile-nav {
   position: fixed;
-  top: 55px;
-  left: 0;
+  top: 0;
+  right: 0;
   height: 100%;
   width: 100%;
-  background: greenyellow;
+  background: $backgroundColorDark;
+
+  transition: right .5s cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+}
+
+.mobile-nav__item {
+  a {
+      width: 100%;
+      color: $linkColor;
+
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      padding: 0.75rem 1rem;
+  }
+
+  a:hover,
+  a:focus {
+    color: $backgroundColor;
+  }
+}
+
+
+.show {
+  right: 0px;
+  overflow: hidden;
+
+}
+
+.hide {
+  right: -100%;
 }

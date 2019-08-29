@@ -1,8 +1,9 @@
 import React from 'react';
+import './logocontainer.scss';
 
 const LogoContainer = () => {
   return (
-    <div>
+    <div id="logo-container" className="center">
       iTravel
     </div>
   )
