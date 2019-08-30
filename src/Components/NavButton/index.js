@@ -3,6 +3,8 @@ import React from 'react';
 const NavButton = (props) => {
   const { onClickToggleMenu } = props;
 
+  //Button global style?
+
   const btnStyle = {
     border: 'none',
     background: 'none',
