@@ -1,10 +1,11 @@
 @import './../../scss/variables';
 
 .hero-section {
-  height: calc(100vh - 55px);
+  height: 100vh;
 
   .hero-content {
     text-align: center;
+    padding: 1rem;
   
     h2 {
       font-weight: bold;

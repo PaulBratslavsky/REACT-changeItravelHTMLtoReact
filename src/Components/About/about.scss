@@ -1,0 +1,41 @@
+@import "./../../scss/variables";
+
+.about-section {
+  min-height: 100vh;
+
+  &__image {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__header{
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+
+    h2 {
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: $backgroundColor;
+    }
+  
+    h3 {
+      font-weight: lighter;
+      font-size: 1.4rem;
+      color: $backgroundColorDarker; 
+    }
+  }
+
+  &__content {
+    h2 {
+      color: $hilightColor;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $mainColor;
+    }
+  }
+}
+

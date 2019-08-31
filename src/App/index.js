@@ -34,7 +34,7 @@ class App extends Component {
       <div className="app">
         <Header onClickToggleMenu={this.onClickToggleMenu} />
         <MainView>
-          <div className="container">
+          
             <MobileMenu
               showMobileNav={showMobileNav} 
               onClickCloseMenu={this.onClickCloseMenu}
@@ -46,7 +46,7 @@ class App extends Component {
               <Route path='/testimonials' component={Testimonials} />
               <Route path='/contact' component={Contact} />
             </Switch>
-          </div>
+            
         </MainView>
         <Footer />
       </div>

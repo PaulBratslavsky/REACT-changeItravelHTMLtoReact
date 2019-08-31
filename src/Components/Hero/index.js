@@ -11,9 +11,9 @@ const Hero = () => {
     <div className="hero-section center">
       <VideoBackground video={video} />
       <div className="hero-content">
-        <h2 className="margin-bottom-2">The first trip we planned <span>was our own</span>.</h2>
+        <h2 className="margin-bottom-2">Your clarity is one trip away.</h2>
 
-        <h3 className="margin-bottom-2">Ever since, we&rsquo;ve been working to make travel<span>better for everyone</span>.</h3>
+        <h3 className="margin-bottom-2">We create soul restoring journeys that inspire you to be you.</h3>
 
         <Button backgroundColor="#FFA500" color="white" text="Plan Your Getaway"/>
       </div>
