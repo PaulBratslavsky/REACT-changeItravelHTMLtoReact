@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about-section">
 
-      <ImageBackground image={"./img/beachandfun.jpg"} alt="My image on vacation."/>
+      <ImageBackground image={"./img/aboutus.jpg"} alt="My image on vacation."/>
       <div className="about-section__header center">
         <h2 className="margin-bottom-2">The first trip we planned was our own.</h2>
         <h3>Ever since, we’ve been working to make travel 

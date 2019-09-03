@@ -16,7 +16,7 @@ const MobileMenu = (props) => {
         <div className="mobile-nav__item center">
           <Link onClick={onClickCloseMenu} to='/'>Home</Link>
           <Link onClick={onClickCloseMenu} to='/about'>About</Link>
-          <Link onClick={onClickCloseMenu} to='/features'>Features</Link>
+          <Link onClick={onClickCloseMenu} to='/services'>Services</Link>
           <Link onClick={onClickCloseMenu} to='/testimonials'>Testimonials</Link>
           <Link onClick={onClickCloseMenu} to='/contact'>Contatct</Link>
         </div>
