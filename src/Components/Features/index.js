@@ -16,10 +16,7 @@ const Features = () => {
       </div>
 
       <div className="container padding-4">
-
-       
-
-        <div className="features-content">
+        <div className="features-content content-container">
           <div className="features-content-item margin-bottom-2">
             <i className="fas fa-anchor margin-bottom-1" ></i>
             <h3 className="margin-bottom-1">Trip Planning</h3>
@@ -37,7 +34,8 @@ const Features = () => {
             <h3 className="margin-bottom-1">Surprise Adventure</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci illo distinctio error deleniti accusantium. Pariatur inventore dolorum necessitatibus ducimus iste non? Perferendis ducimus sed maiores.</p>
           </div>
-        </div>
+
+          </div>
       </div>
     </div>
   )

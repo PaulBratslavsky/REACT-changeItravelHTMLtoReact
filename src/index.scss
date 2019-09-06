@@ -1,3 +1,4 @@
+
 // VARIABLES CSS 
 @import './scss/variables';
 
@@ -13,8 +14,14 @@
 // MAIN VIEW CSS
 @import './Components/MainView/mainview';
 
+// MAIN NAV CSS
+@import './Components/MainNav/mainnav';
+
 // MOBILE MENU CSS
 @import './Components/MobileMenu/mobilenav';
 
 // FOOTER CSS
 @import './Components/Footer/footer';
+
+// MEDIA QUERY STYLE
+@import './scss/media';

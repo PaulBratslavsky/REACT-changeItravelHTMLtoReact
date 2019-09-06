@@ -2,13 +2,20 @@
 
 
 .testimonials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   &__image {
     direction: block;
-    width: 100%
+    width: 100%;
   }
 
   &__content {
     padding: 1rem;
+
+    text-align: center;
 
     h2 {
       color: $mainColor;
