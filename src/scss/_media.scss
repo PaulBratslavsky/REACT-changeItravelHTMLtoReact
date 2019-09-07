@@ -72,12 +72,9 @@ and (max-device-width : 768px) {
 }
 
 @media only screen 
-and (max-device-width : 1279px) 
-and (min-device-width : 769px) {
+and (max-width : 1279px) 
+and (min-width : 769px) {
 /* Styles */
-body {
-  background: green;
-}
 
 
 .container button {
@@ -85,7 +82,7 @@ body {
 }
 
 nav.main-nav {
-  display: block;
+  display: flex!important;
 }
 
 
@@ -135,7 +132,7 @@ nav.main-nav {
 }
 
 @media only screen 
-and (min-device-width : 1280px) {
+and (min-width : 1280px) {
 
   /* Form Styles */
 .form-style-5 {
@@ -144,6 +141,15 @@ and (min-device-width : 1280px) {
 .container {
   width: 1100px;
 }
+
+.container button {
+  display: none;
+}
+
+nav.main-nav {
+  display: flex !important;
+}
+
 
 #logo-container {
   position: static !important;
