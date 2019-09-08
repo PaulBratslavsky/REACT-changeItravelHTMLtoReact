@@ -8,7 +8,7 @@ const About = () => {
 
       <ImageBackground image={"./img/aboutus.jpg"} alt="My image on vacation."/>
       <div className="about-section__header center">
-        <h2 className="margin-bottom-2">The first trip we planned was our own.</h2>
+        <h2 className="margin-bottom-1">The first trip we planned was our own.</h2>
         <h3>Ever since, we’ve been working to make travel 
 better for everyone.</h3>
       </div>

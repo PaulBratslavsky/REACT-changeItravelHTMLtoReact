@@ -7,7 +7,7 @@ const Testimonials = () => {
     <div className="testimonials-section">
       <ImageBackground image={"./img/beachandfun.jpg"} alt="My image on vacation."/>
       <div className="about-section__header center">
-        <h2 className="margin-bottom-2">Testimonials.</h2>
+        <h2 className="margin-bottom-1">Testimonials.</h2>
         <h3>What our happy clients are saying.</h3>
       </div>
 

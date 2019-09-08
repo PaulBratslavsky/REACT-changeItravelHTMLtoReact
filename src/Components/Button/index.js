@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Button = (props) => {
-  const { text, backgroundColor, color } = props;
-  
+  const { text, backgroundColor, color, openModalWindow } = props;
+  let myFunction = openModalWindow;
   const buttonStyle = {
     fontWeight: 'bold',
     fontSize: '1.2rem',
@@ -15,7 +15,7 @@ const Button = (props) => {
   }
   
   return (
-    <button style={buttonStyle}>{text}</button>
+    <button onClick={myFunction} style={buttonStyle}>{text}</button>
   )
 }
 

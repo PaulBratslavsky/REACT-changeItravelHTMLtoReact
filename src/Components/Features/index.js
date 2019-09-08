@@ -9,9 +9,9 @@ const Features = () => {
 
     <ImageBackground image={"./img/adult-ancient.jpg"} alt="My vacation."/>
       <div className="about-section__header center">
-      <div className="features-heading margin-bottom-2">
-          <i className="fas fa-star margin-bottom-3"></i>
-          <h2>Our Services</h2>
+      <div className="features-heading">
+          <h2 className="margin-bottom-1">Our Services</h2>
+          <h3>Lorem ipsum dolor sit amet.</h3>
         </div>
       </div>
 

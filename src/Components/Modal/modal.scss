@@ -1,0 +1,45 @@
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #E8EEEF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 500;
+  padding: 1rem;
+
+  &-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+
+    position: absolute;
+    right: 26px;
+    top: 21px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+  }
+}
+
+.modal-show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s ease-in, opacity 0.5s ease-in;
+
+}
+
+.modal-hide {
+  opacity: 0;
+  transition: visibility 0.5s ease-out, opacity 0.5s ease-out;
+  visibility: hidden;
+
+}
